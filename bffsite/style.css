@@ -194,8 +194,9 @@ float: left;
 position: relative;
 z-index: 3;
 text-align: left;
-margin: 22px 0 30px 190px
-
+margin: 20px 0 30px 190px;
+    left: 0px;
+    width: 375px;
 }
 
 
@@ -270,6 +271,31 @@ padding: 15px 0;
 }
 
 #sidenav.side sponsor p{}
+
+/* Mailing List */
+
+#blanket {
+
+   background-color:#111;
+   opacity: 0.65;
+	position: fixed;
+   z-index: 9001; /*ooveeerrrr nine thoussaaaannnd*/
+   height: 100%;
+   top:0px;
+   left:0px;
+   width:100%;
+}
+
+#popUpDiv {
+	position:fixed;
+	border:10px solid #7AC143;
+	background: #fff;
+	width:315px;
+	height:100px;
+	z-index: 9002;
+	padding: 10px 10px;
+	}
+
 
 /* #botnav{
 width: 700px;

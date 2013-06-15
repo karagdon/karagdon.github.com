@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html> 
 
+<head>
+    <style type="text/css">
+        .auto-style1
+        {
+            width: 198px;
+        }
+    </style>
+</head>
+
 <header>
 	<title> Beacon Food Forest : Community Permaculture Project
 		</title>
-		
+	<script type="text/javascript" src="csspopup.js"></script>
 	<link href="style.css" type="text/css" rel="stylesheet">
 		</link>
 		
 	</header>
 
 <body>
+<!-- Mailing List -->
+	<div id="blanket" style="display:none;"></div>
+	<div id="popUpDiv" style="display:none;">
+	
+	<form action="http://www2.seattle.gov/lists/lsoftupdate.asp" method="post">
+	<input type="hidden" name="ConfName" value="BEACONFOODFOREST">
+	<input type="hidden" name="ReturnPage" value="http://beaconfoodforest.org/index.html">
+
+        <p><strong>Enter your  e-mail address:</strong><br>
+         <input type="text" size="45" name="Email">
+        <input type="submit" value="Subscribe"> </p>
+         <!--<input type="reset" value="Cancel">-->
+      </form>
+	
+		<a onclick="popup('popUpDiv')">Close</a>
+	</div>	
+	<!-- Mailing List -->
 	<div id="brown-bg">
 	</div>
 <div id="main">
@@ -111,34 +137,34 @@
 	</div><!-- contentitle -->
 	
 			<p>	We are seeking the help of Beacon Hill community members, local institutions and city wide volunteers to join together to build and grow a Food Forest.
-		<br><br>To get involved with our project and receive event notices about upcoming work parties, please Join Our Mailing List.   
+		<br><br>To get involved with our project and receive event notices about upcoming work parties, please <b><u><a  onclick="popup('popUpDiv')">Join Our Mailing List</a></u></b>.   
 		<br><br>In the meantime, there are committees working behind-the-scenes to develop this community project. The teams include field work, education, outreach, event planning and marketing services.  All are welcome to get involved.
-		<br><br>Forks up to all those who have supported our efforts so far. 
-
-	<table class="link-table">
+		<br><br>Forks up to all those who have supported our efforts so far.</p>
+        <p>	<br />
+            <table class="link-table">
 	<span class="blue">
 	<tr>
 		<td>
 			<a href="*">
 			Sign up to volunteer
-			</a>
+			</span></a>
 		</td>
 		<td>
 			<a href="*">
 			Sign up for a P-patch plot
-			</a>
+			</span></a>
 		</td>
 	</tr>
 	<tr>
 		<td>
 			<a href="*">
 			Join our mailing list
-			</a>
+			</span></a>
 		</td>
 		<td>
 			<a href="*">
 				View our Calendar
-				</a>
+				</span></a>
 			</td>
 		</tr>
 		<tr>
@@ -158,7 +184,8 @@
 	</div><!-- contentitle -->
 	
 
-			<p>The Beacon Food Forest is community powered and survives on generous donations from our growing number of volunteers.  This project’s success is sustained by the support of diverse friends and neighbors around the world.  There are many welcomed ways to support the Beacon Food Forest:
+			<p>The Beacon Food Forest is community powered and survives on generous donations from our growing number of volunteers.  This project’s success is sustained by the support of diverse friends and neighbors around the world. 
+		<br><br>There are many welcomed ways to support the Beacon Food Forest:
 			</p>	
 	<table class="link-table">
 	<span class="blue">
@@ -198,7 +225,7 @@
 	
 		<p>The Beacon Food Forest is located at 15th Ave S. and S. Dakota St. Seattle WA to the west of Jefferson Park.
 	<br><br>The design of this seven-acre site provides opportunities for cultural exchange and understanding, for education and recreation.
-	<br><br>Visit us on-site to help us build our Food Forest or Join Our Mailing List to get involved.
+	<br><br>Visit us on-site to help us build our Food Forest or <b><u><a  onclick="popup('popUpDiv')">Join Our Mailing List</a></u></b> to get involved.
 	</p>
 	
 	<table class="link-table">
@@ -225,7 +252,7 @@
 			
 		</td>
 	</tr>
-	</span>
+	</div>
 	</table>
 	
 	<br><br>	
@@ -238,7 +265,7 @@
 	<table> 
 	
 	<tr>
-		<td>
+		<td class="auto-style1">
 			<p>	Volunteer Coordinator
 			<br>Judi Johnson 
 				<span class="link">
@@ -257,7 +284,7 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td class="auto-style1">
 			<p>	Administration
 			<br>Melanie Coerver 
 			
@@ -280,7 +307,7 @@
 	</tr>
 
 	<tr>
-		<td>
+		<td class="auto-style1">
 			<p>	Outreach
 			<br>Cheryl Wilder
 			<span class="link">
@@ -304,13 +331,13 @@
 	<br><br>
 	<div id="botnav">
 	
-					<a href="">Get Involved </a>
+					<a href="#getinvolved">Get Involved </a>
 
 					<a>Donate</a>
 
 					<a>Learn More About The Project</a>
 
-					<a>Join the Mailing List</a>
+					<a  onclick="popup('popUpDiv')">Join Our Mailing List</a>
 
 					<a>Get Directions</a>
 
@@ -439,7 +466,7 @@
 			</span>
 			
 			
-			<br/><br/><br>
+			<br/><br/><br><br>
 			<br/><br/><br/><br/>
 			
 
