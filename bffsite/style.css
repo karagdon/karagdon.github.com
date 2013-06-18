@@ -15,262 +15,329 @@ Blue
  */
 
 /*
-	Global text styles 
-								*/
+//////	Global text styles 
+									
+	/* 
+	non global text > 
+		.top-text  
+		.title-text
+		.subtitle-text
+		.side-title
+		.sponsor   
+							*/					
+			
 p{
-
-color:#4C301C;
-font-size: 13px;
-font-family: "Segoe";
- line-height:100%;
+	color:#4C301C;
+	font-size: 12px;
+	/* font-family: "Segoe"; */
+	font-family: "helvetica";
 
 }
+
 .content-title{
-font-size: 25px;
-color:#A5978D;
-font-family: "Georgia";
+	font-size: 25px;
+	color:#A5978D;
+	font-family: "Georgia";
+	}
 
-}
 .text-bold{
-font-weight:bold;
-}
+	font-weight:bold;
+	}
+
 	
-/* Links */
-
-#header .nav a, a:hover, a:active, a:visited, a:link {
-color: #4C301C;
-font-size: 12px;
-font-family: "Segoe";
-font-weight: bold;
-text-decoration: none;
-text-transform:uppercase;
-
-padding: 0px 30px 0 0;
-}
-
-#botnav a, a:hover, a:active, a:visited, a:link {
-color: #fff;
-font-size: 12px;
-font-family: "Segoe";
-font-weight: bold;
-text-decoration: none;
-text-transform:uppercase;
-padding: 0px 0px 0 20px;
-}
-
-#container .link a, a:hover, a:active, a:visited, a:link {
-color: #000;
-font-size: 13px;
-font-weight: normal;
-font-family: "Segoe";
-text-decoration: underline;
-text-transform:none;
-padding: 0px 0 0 0;
-}
-
-#container .heavy a, a:hover, a:active, a:visited, a:link {
-color: #000;
-font-size: 13px;
-font-family: "Segoe";
-font-weight: bold;
-text-decoration: underline;
-text-transform:none;
-padding: 0px 0 0 0;
-}
-
-
-#container .blue  a, a:hover, a:active, a:visited, a:link {
-color: #0DAED3;
-font-size: 13px;
-font-family: "Segoe Semibold";
-font-weight: bold;
-text-decoration: none;
-text-transform:none;
-padding: 0px 0 0 0;
-}
-.content-title a:hover, a:active, a:visited, a:link {
-color:#A5978D;
-font-size: 25px;
-font-family: "Georgia";
-font-weight: normal;
-text-decoration: none;
-text-transform:none;
-padding: 0px 0 0 0;
-}
-
-#footer .link a, a:hover, a:active, a:visited, a:link {
-color: #000;
-font-size: 13px;
-font-weight: normal;
-font-family: "Segoe";
-text-decoration: underline;
-text-transform:none;
-padding: 0px 0 0 0;
-
-}
-
 /* 
-	END - Global text styles 
-								*/
+//////Links */
 
+	/* 	Bold & Uppercase  */
+		.nav a, .nav a:hover, .nav a:active, .nav a:visited, .nav a:link {
+			color: #4C301C;
+			font-size: 12x;
+			/* font-family: "Segoe"; */
+			font-family: "helvetica";
+			
+			font-weight: bold;
+			text-decoration: none;
+			text-transform:uppercase;
+			padding: 0px 30px 0 0;
+
+			}
+
+		#botnav a, #botnav a:hover, #botnav a:active, #botnav a:visited, #botnav a:link {
+			color: #fff;
+			font-size: 12px;
+			/* font-family: "Segoe"; */
+			font-family: "helvetica";
+			font-weight: bold;
+			text-decoration: none;
+			text-transform:uppercase;
+			padding: 0px 0px 0 20px;
+
+			}
+			
+	/* 	Normal & Underlined */
+		#container .link a, #container .link a:hover, #container .link a:active, #container .link a:visited, #container .link a:link {
+			color: #4C301C;
+			font-size: 12px;
+			font-weight: normal;
+			/* font-family: "Segoe"; */
+			font-family: "helvetica";
+			text-decoration: underline;
+			text-transform:none;
+			padding: 0px 0 0 0;
+
+			}
+
+		#footer .link a, #footer .link a:hover, #footer .link a:active, #footer .link a:visited, #footer .link a:link {
+			color: #4C301C;
+			font-size: 12px;
+			font-weight: normal;
+			/* font-family: "Segoe"; */
+			font-family: "helvetica";
+			text-decoration: underline;
+			text-transform:none;
+			padding: 0px 0 0 0;
+
+
+			}
+	/* 	Bold & Underline */
+		#container .heavy a, #container .heavy a:hover, #container .heavy a:active, #container .heavy a:visited, a:link {
+			color: #4C301C;
+			font-size: 12px;
+			/* font-family: "Segoe"; */
+			font-family: "helvetica";
+			font-weight: bold;
+			text-decoration: underline;
+			text-transform:none;
+			padding: 0px 0 0 0;
+
+			}
+
+	/* Bold & Blue */
+	#container .blue  a, #container .blue a:hover, #container .blue a:active, #container .blue a:visited, a:link {
+		color: #0DAED3;
+		font-size: 12px;
+			/* font-family: "Segoe Semibold"; */
+			font-family: "helvetica";
+		font-weight: bold;
+		text-decoration: none;
+		text-transform:none;
+		padding: 0px 0 0 0;
+
+		}
+	
+	/* Static anchor for content-title */	
+		.content-title a:hover, .content-title a:active, .content-title a:visited, .content-title a:link {
+			color:#A5978D;
+			font-size: 25px;
+			font-family: "Georgia";
+			font-weight: normal;
+			text-decoration: none;
+			text-transform:none;
+			padding: 0px 0 0 0;
+
+			}
+
+
+
+/* //////	END - Global text styles ////// */				
+								
+								
 body{
-background:#fff;
-z-index: -3;
-}
-
-#brown-bg {
-background-color: #4C301C;
-height: 225px;
-width: 950px;
-position: absolute;
-margin: 21px 0 0 -8px;
-z-index: -4;
-}
+	background:#fff;
+	z-index: -3;
+	}
 
 #header{
-width: 100%;
-height: 225px;
-padding: 0px 0px;
-margin: 15px 0 0 0px;
-position: absolute;
-z-index: -2;
-}
+	width: 100%;
+	height: 225px;
+	padding: 0px 0px;
+	margin: 15px 0 0 0px;
+	position: absolute;
+	z-index: -2;
+	}
+
+	#brown-bg {
+		background-color: #4C301C;
+		height: 225px;
+		width: 950px;
+		position: absolute;
+		margin: 21px 0 0 -8px;
+		z-index: -4;
+		}
+	#green {
+		width:155px;
+		height:255px;
+		position: absolute;
+		margin: 0px 15px 0 15px;
+		z-index: 3;
+		}
+	
+	.banner-img {
+		/* background-image:url('img/bg.png'); */
+		width:155px;
+		height:255px;
+		position: absolute;
+		margin: 0px 0px;
+		z-index: 3;
+		}
+
+	.nav{
+		width: 90%;
+		height: 25px;
+		background-color: #0DAED3;
+		float: right;
+		text-align: right;
+		margin: 12px 0 0 0;
+		z-index: 3;
+		}
+		
 #main{
-background-image:url('img/bg.png');
-width: 950px;
-height: auto;
-position: absolute;
-margin: -8px -8px;
-padding: 15px 0px 0 0;
-z-index: 1;
-}
+	background-image:url('img/bg.png');
+	width: 950px;
+	height: auto;
+	position: absolute;
+	margin: -8px -8px;
+	padding: 15px 0px 0 0;
+	z-index: 1;
+	}
+
 .top-text{
-color:#4C301C;
+	color:#4C301C;
+			/* font-family: "Segoe"; */
+			font-family: "helvetica";
+	font-size: 14px;
+	float:right;
+	margin: -12px auto;
+	padding: 5px  35px 0 0;
+	position: relative;
+	z-index: 1;
+	}
 
-font-family: "Segoe";
-font-size: 13px;
-float:right;
-margin: -12px auto;
-padding: 5px  35px 0 0;
-position: relative;
-z-index: 2;
-}
-
-
-.nav{
-width: 90%;
-height: 25px;
-background-color: #0DAED3;
-float: right;
-text-align: right;
-margin: 12px 0 0 0;
-z-index: 2;
-}
-
-#green {
-width:155px;
-height:255px;
-position: absolute;
-margin: 0px 15px 0 15px;
-z-index: 3;
-}
 
 
 /* 
-Navigation Header content
+////// Navigation Header content
 					*/
 			
-#banner-img {
-width:155px;
-height:255px;
-position: absolute;
-margin: 0px 0px;
-z-index: 3;
-}
-
 
 #title {
-float: left;
-position: relative;
-z-index: 3;
-text-align: left;
-margin: 20px 0 30px 190px;
-    left: 0px;
-    width: 375px;
-}
+	float: left;
+	position: relative;
+	text-align: left;
+	margin: 20px 0 30px 190px;
+	left: 0px;
+	width: 425px;
+		z-index: 3;
+	}
+	
+/* These styles only appear in #title */
+	.title-text{
+		color: #fff;
+		font-size: 28px;
+		font-family:"Georgia";
+		}
 
+	.subtitle-text{
+		color: #ee3a43;
+		text-transform:uppercase;
+		font-size: 25px; 
+		font-family: "Lucida Grande";
+		}
 
-.title-text{
-color: #fff;
-font-size: 28px;
-font-family:"Times New Roman",Georgia,Serif;
-}
-
-.subtitle-text{
-color: #ee3a43;
-text-transform:uppercase;
-font-size: 25px; 
-font-family: "Lucida Grande";
-
-}
-
-/* This holds the content, the images, and the sidebar */
+/* 
+////// This holds the content, the images, and the sidebar */
 #container{
-width: 100%;
-height: auto;
-/* background-color: #00ffcc; */
-margin: 33px 0 0 0;
-padding: 250px 0 0px 0 ;
-float:right;
-z-index: 3}
+	width: 100%;
+	height: auto;
+	margin: 33px 0 0 0;
+	padding: 250px 0 0px 0 ;
+	float:right;
+	z-index: 3
+	}
 
-/* Front page content (left) */
-#content{
-width: 460px;
-height: auto;
-margin: 0 0px 0 33px;
-float:left;
-z-index: 3;}
+		/* Front page content (left) */
+		#content{
+			width: 460px;
+			height: auto;
+			margin: 0 0px 0 33px;
+			float:left;
+			z-index: 3;
+			}
+			
+			.link-table {
+				border-collapse:separate;
+				border-spacing: 20px 0px;
+				margin: 0px 0 0 -20px;
+				}
 
-/* Images here */
-#imageBar{
-width: 212px;
-margin: 270px 00px 0 20px;
-position: relative;
-float:left;
-/* background-color: #fff888; */
-}
-#imageBar img {
-margin:0 10px 200px 0 ;
+			/* Images here */
+			#imageBar{
+				width: 212px;
+				margin: -185px 00px 0 20px;
+				position: relative;
+				float:left;
+				}
+				/* Image spacing */
+					#imageBar img{
+					margin:455px 10px 0px 0 ;
+					}
+				
+			/* Events, workparties, etc */
+			#sidenav{
+				float:left;
+				margin: 270px 0 0 0px;
+				padding: 0 25px;
+				width:150px;
+				height: 100%;
+				border-left: 10px #50B748 solid;
+				}
 
-}
+				.sidetitle{
+					font-size: 19px;
+					color:#7AC143;
+					font-family: "Georgia";
+					 line-height:90%;
+					}
+				
+				/* This only appears once */
+				.sponsor{
+					font-size: 19px;
+					color:#4C301C;
+					font-family: "Georgia";
+					line-height:110%;
+					position: relative;
+					padding: 15px 0;
+					}
+			
+			/* Bottom Navigation Bar */
+			#botnav {
+				clear:both;
+				width: 700px;
+				height: 25px;
+				background-color: #4C301C;
+				border-right: 10px  #50B748 solid;
+				padding: 0 0 0 25px;
+				margin:  0 0 0 -34px;
+				}
 
-/* Events, workparties, etc */
-#sidenav{
 
-float:left;
-margin: 270px 0 0 0px;
-padding: 0 25px;
-width:150px;
-height: 100%;
-border-left: 10px #50B748 solid;}
+/* 
+	Footer */
 
-.sidetitle{
-font-size: 19px;
-color:#7AC143;
-font-family: "Georgia";
- line-height:90%;
-}
-.sponsor{
-font-size: 19px;
-color:#4C301C;
-font-family: "Georgia";
- line-height:110%;
- position: relative;
-padding: 15px 0;
-}
+#footer{
+	width: 100%;
+	position:relative;
+	clear:both;
+	bottom: 0;
+	padding: 0px 35px 16px 35px;
+	height: 30px;
+	background-color: #fff;
+	margin: 0 0px 0 -1px;
+	z-index:10;
+	}
 
-#sidenav.side sponsor p{}
+/* 
+//////Extras */
 
 /* Mailing List */
 
@@ -295,38 +362,4 @@ padding: 15px 0;
 	z-index: 9002;
 	padding: 10px 10px;
 	}
-
-
-/* #botnav{
-width: 700px;
-height: 25px;
-background-color: #4C301C;
-position:absolute;
-bottom: 78px;
-text-align: left;
-padding: 0px 0 0 25px;
-z-index: 3;
-} */
-
-#botnav {
-clear:both;
-width: 700px;
-height: 25px;
-background-color: #4C301C;
-border-right: 10px  #50B748 solid;
-padding: 0 0 0 25px;
-margin:  0 0 0 -34px;
-}
-
-#footer{
-width: 100%;
-position:relative;
-clear:both;
-bottom: 0;
-padding: 16px 35px;
-height: 30px;
-background-color: #fff;
-z-index:10;
-}
-
 
