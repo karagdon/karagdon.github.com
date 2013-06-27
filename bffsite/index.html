@@ -1,45 +1,243 @@
 <!DOCTYPE html>
 <html> 
+	<head>
 
-<head>
-    <style type="text/css">
-        .auto-style1
-        {
-            width: 198px;
-        }
-    </style>
-</head>
-
-<header>
-	<title> Beacon Food Forest : Community Permaculture Project
+		<title> 
+		Beacon Food Forest : A Community Permaculture Project
 		</title>
-	<script type="text/javascript" src="csspopup.js"></script>
-	<link href="style.css" type="text/css" rel="stylesheet">
-		</link>
+		<script type="text/javascript" src="easypop.js">	</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script src="animate.js"></script>
+		<link href="style.css" type="text/css" rel="stylesheet"></link>
 		
-	</header>
+	</head>
 
 <body>
-<!-- Mailing List -->
-	<div id="blanket" style="display:none;"></div>
-	<div id="popUpDiv" style="display:none;">
+<!-- These are all the pop-up pages -->
 	
-	<form action="http://www2.seattle.gov/lists/lsoftupdate.asp" method="post">
-	<input type="hidden" name="ConfName" value="BEACONFOODFOREST">
-	<input type="hidden" name="ReturnPage" value="http://beaconfoodforest.org/index.html">
 
-        <p> 
-		<strong>Enter your  e-mail address to subscribe to the 
-		<br> Beacon Food Forest Mailing List! </strong>
-		<br>
-         <input type="text" size="45" name="Email">
-        <input type="submit" value="Subscribe"> </p>
-         <!--<input type="reset" value="Cancel">-->
-      </form>
+
+<!-- Mailing List -->
+
+	<div id="mailList">	
+			<div class="content-title">
+				Beacon Food Forest Mailing List
+			</div>
+			<p> 
+				<strong>
+				Enter your  e-mail address to subscribe! 
+				</strong>
+			 </p>
+		<form action="http://www2.seattle.gov/lists/lsoftupdate.asp" method="post">
+			<input type="hidden" name="ConfName" value="BEACONFOODFOREST">
+			<input type="hidden" name="ReturnPage" value="http://beaconfoodforest.org/index.html">
+				<br>
+				 <input type="text" size="40" name="Email">			
+				<input type="submit" value="Subscribe">
+				 <!--<input type="reset" value="Cancel">-->
+		</form>
+	</div>
+
 	
-		<a onclick="popup('popUpDiv')">Close</a>
-	</div>	
-	<!-- Mailing List -->
+	<div id="fadeMail" onClick="mailListbox_close();">
+	</div> 
+	
+	<!--In text: 
+				<a  href="#" onclick="mailListbox_open()"></a>
+	-->	
+	
+<!-- END Mailing List -->
+
+
+<!-- Calendar -->
+
+	<div id="calendar">
+			<iframe src="https://www.google.com/calendar/embed?src=ds5careihateqgn9kamelq4tjo%40group.calendar.google.com&ctz=America/Los_Angeles"
+			style="border: 0" 
+			width="800" 
+			height="600" 
+			frameborder="0" 
+			scrolling="no"></iframe>
+	</div>		
+	<div id="fadeCal" onClick="calenbox_close()">
+	
+	</div>
+		
+	<!--In text: 
+				<a  href="#" onclick="calenbox_open()"></a>
+	-->
+			
+<!-- End Calendar -->
+
+<!-- Directions -->
+	<div id="directions">
+
+		<div class="content-title">
+		Bus Routes
+		</div>
+		<p>			
+			 We highly encourage sustainable transporation methods such as bussing.
+			<br> The <span class="text-bold">Sound Transit Link Light Rail</span> as well as King County Metro routes <span class="text-bold">#50</span>, <span class="text-bold">#60</span>, and <span class="text-bold">#36</span> are all within walking distance to the Beacon Food Forest Site. 
+			<br>
+			<br>
+			<span class="blue">
+			<a href="http://metro.kingcounty.gov/#apps-tools" target="_blank"> Plan your trip with King County Metro </a>
+			<br><a href="http://onebusaway.org/p/Tools.action" target="_blank"> Plan your trip with OneBusAway</a>
+			</span></p><br>
+		 <div class="content-title">
+						Driving Directions
+					</div>
+		<p>
+			We are located in the North Beacon Hill area, less than 5miles south of I-90 and directly east of the West Seattle Bridge. 
+			<br>The Beacon Food Forest site is adjacent to Jefferson Park on 15th AVE S and S. Dakota St in Seattle, WA.
+			<br>
+			<br><strong>I-5 Southbound</strong>
+			 <br>Take exit #163A and keep left toward Columbian Way
+			  <br>
+			<br><strong>I-5 Northbound</strong>
+			<br>Take exit #163, keep right Columbian Way
+			<br>
+			<br>Once off the exit:
+			<br>
+			<br>• Stay on Columbian Way, which will merge onto 15th AVE S.
+			<br>• Turn left onto S. Dakota St
+			<br>• Past 16th AVE S, there is parking available in the lot adjacent to the park.
+			<br>
+		</p>
+
+			<table class="link-table" >
+			<tr>
+			<td>
+
+				<div class="content-title">
+				Beacon Food Forest
+				</div>
+				
+				<p>
+				<span class="text-bold">
+				<br>Address:</span>
+				<br>15th Avenue South & South Dakota Street
+				<br>Seattle, WA 98108
+				<br><br>
+				<span class="blue">
+					<a href="#contactus" onClick="directbox_close()"> 
+					Contact Us</a></span>
+					<br><br>
+					
+					<a href="https://www.facebook.com/beaconfoodforest" target="_blank"><img src="img/social/facebook.png"></a>
+					
+					<a href="http://goo.gl/sNFL7" target="_blank"><img src="img/social/google.png"></a>
+					
+					<a href="http://maps.apple.com/?q=1600+S+Dakota+St+Seattle+WA+98108-1546+United+States" target="_blank"><img src="img/social/apple.png"></a>
+					
+					<a href="http://www.yelp.com/biz/beacon-food-forest-seattle" target="_blank"><img src="img/social/yelp.png"></a>
+				</p>
+
+			</td>
+			<td>
+					<p><img src="img/map.png">
+					</p>
+			</td>
+			</tr>
+			</table>
+		</div>
+	
+	<div id="fadeDir" onClick="directbox_close()"></div>
+	<!--In text: 
+				<a  href="#" onclick="directbox_open()"></a>
+		-->
+<!-- End Directions -->	
+
+
+<!-- Donations -->
+
+	<div id="donate">
+
+<div class="content-title">
+Support the Beacon Food Forest
+			</div>	
+
+	<p>As we are powered by our community, we welcome any donations for you to show your support of the Beacon Food Forest.
+	<br>
+	<br><Strong>Donate through paypal</strong>
+	<br>You can make a monetary donation which goes toward the Beacon Food Forest's sustainability. 
+	<br> 
+	<br> [Donate button here]
+	<br>
+	<br><strong>Donate Art, Food, Materials, Music, and tools:</strong>
+	<br>Please fill out the form below and include a short description of your donation. 
+	<br>We will be in contact with you soon.</p>
+	
+
+
+		
+		<div class="donateform"> 
+			<label> 
+				<input 
+					id="given-name" 
+					name="given-name"
+					type="text"
+					placeholder="Your First & Last Name"
+					required 
+					autofocus
+					>
+			</label>
+		</div>
+
+		
+		<div class="donateform"> 
+			<label> 
+				<input id="email" name="email" type="email" placeholder="Your@email.com" required>
+			</label> 
+		</div>
+
+		
+		<div class="donateform"> 		
+			<label>
+				<select id="dtype" name="dtype" placeholder="Select a Donation Type..." required> 
+				<option value='' disabled selected style='display:none;'>Please select a donation type</option>
+				<option label="Art & Music" value="artandmusic"></option>
+				<option label="Food" value="food"></option>
+				<option label="Plants & Materials" value="plantsandmats"></option>
+				</select>
+			</label> 
+		</div>
+
+		
+		<div class="donateform">  
+			<label>
+				<textarea id="donatedesc" name="donatedesc" placeholder="A Short description of your donation:"required></textarea>
+			</label> 
+		</div>
+
+		<div class="donateform"> 		
+		  <input type="submit" value="Submit" name="submit">
+		</div>
+		</div>	
+	
+	<div id="fadeDon" onClick="donatebox_close()"></div>
+<!-- End Donations -->
+
+<!-- Registration -->
+
+	<div id="register">
+
+	</div>
+	
+<!-- END Registration -->
+	<!-- Video -->
+	<div id="video">
+<iframe src="http://player.vimeo.com/video/43583846" width="700" height="393" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
+<p>Forks up to our friends at  <a href="http://vimeo.com/interchangemedia">InterChange Media</a> for the awesome video! 
+<br /> <br /> Music composed by Erica Hilario. Special thanks to Glenn Herlihy one of the co-founders who spent a lot of time helping us create the video. Thanks also to Jacqueline Cramer, Giovanni Dellino, Barbara Jefferson, Margaret Harrison and to everyone involved with the project. <br /> 	
+</p> 
+	</div>
+
+	<div id="fadeVid" onClick="videobox_close()"></div>
+<!--  END video -->
+
+
+
 <div id="brown-bg">
 	</div>
 <div id="main">
@@ -62,17 +260,20 @@
 				<a href="#getinvolved">
 				Get Involved </a>
 				
-				<a href="#calendar">
+				<a  href="#" onclick="calenbox_open()">
+				<!-- <a href="#calendar"> -->
 				Calendar</a>
 				
-				<a href="#faq">
+				<a href="faq.html">
 				Faq</a>
 				
 				<a href="#contactus"> 
 				Contact Us</a>
 				
-				<a href="#translate">
+	<a href="">
+
 				Translate</a>
+				
 				
 
 		</div>
@@ -111,7 +312,7 @@
 			<br><br>Join us to improve public health by regenerating our public land into an edible forest ecosystem. We work to reduce agricultural climate impact, improve our local food security, provide educational opportunities, and celebrate growing food for the benefit of all species. 
 			<br><br>Please support the Beacon Food Forest by getting involved, donating and spreading the word.
 			</p>
-			<br><br>	
+			<br><br><br>
 			
 		<div class="content-title">
 				What is a Food Forest?
@@ -130,76 +331,81 @@
 		<span class="text-bold">Living Gateway</span> to connect and serve as portals as you meander through the forest.
 		<br><br>The Beacon Food Forest started in 2009 as a final design project for a permaculture design course.  The 7-acre site is located in the Beacon Hillneighborhood to the west of Jefferson Park, 2.5 miles from downtown Seattle.  Phase One (2 acres) is scheduled to be up and running by early 2014.
 			</p>
-			<br/>
+
 			
 		<span class="blue">
-			<a href="*">
+			<a href="aboutperma.html">
 				About Permaculture
 			</a><br/>
 			
-			<a href="*">
+			<a href="#"  onclick="videobox_open()">
 				View Our Video
 			</a><br/>
 			
-			<a href="*">
+			<a href="aboutproject.html">
 				About The Project
 			</a><br/>
 			
 		</span>
-		<br /><br />
+		<br /><br /><br>
 	</span>	
 	
 	<div class="content-title">
 	
-		<a name="getinvolved"> Get	Involved</a>
+		<div id="getinvolved"> Get	Involved</div>
 	</div><!-- contentitle -->
 	
 			<p>	We are seeking the help of Beacon Hill community members, local institutions and city wide volunteers to join together to build and grow a Food Forest.
 		<br><br>To get involved with our project and receive event notices about upcoming work parties, please 	
 		<span class="heavy">
-		<a  onclick="popup('popUpDiv')">Join Our Mailing List</a></span>. 
+		<a  href="#" onclick="mailListbox_open()">Join Our Mailing List</a></span>. 
 		<br><br>In the meantime, there are committees working behind-the-scenes to develop this community project. The teams include field work, education, outreach, event planning and marketing services.  All are welcome to get involved.
 		<br><br>Forks up to all those who have supported our efforts so far.</p>
         <p>	
             <table class="link-table">
-	<span class="blue">
+
 	<tr>
 		<td>
+			<span class="blue">
 			<a href="*">
 			Sign up to volunteer
 			</span></a>
 		</td>
 		<td>
-			<a href="*">
+			<span class="blue">
+			<a href="http://www.seattle.gov/neighborhoods/ppatch/signupPpatch.htm" target=_blank>
 			Sign up for a P-patch plot
 			</span></a>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="*">
-			Join our mailing list
+			<span class="blue">
+			<a  href="#" onclick="mailListbox_open()">Join Our Mailing List</a>
+
 			</span></a>
 		</td>
 		<td>
-			<a href="*">
+	<span class="blue">
+			<a  href="#" onclick="calenbox_open()">
 				View our Calendar
 				</span></a>
 			</td>
 		</tr>
-		<tr>
+<!-- 		<tr>
 			<td>
+				<span class="blue">
 			<a href="*">
 			View meeting minutes
 			</a>
 			</td>
-		</tr>
+		</tr> -->
 		</span>
 	</table>	
-	<br><br>
+
 	</p>
-	
-	<div class="content-title">
+	<br>	<br>
+	<div class="content-title" id="supportus">
 	Support Our Community
 	</div><!-- contentitle -->
 	
@@ -208,35 +414,43 @@
 		<br><br>There are many welcomed ways to support the Beacon Food Forest:
 			</p>	
 	<table class="link-table">
-	<span class="blue">
+
 	<tr>
 		<td>
-			<a href="*">
+			<span class="blue">
+			<a href="">
 			Donate Money
 			</a>
+			</span>
 		</td>
 		<td>
+			<span class="blue">
 			<a href="*">
 			Donate Plants or Materials
 			</a>
+			</span>
 		</td>
 	</tr>
 	<tr>
 		<td>
+			<span class="blue">
 			<a href="*">
 			Donate Food
 			</a>
+			</span>
 		</td>
 		<td>
+			<span class="blue">
 			<a href="*">
 			Donate Music or Art		
 			</a>
+			</span>
 		</td>
 	</tr>
 	</span>
 	</table>
 	
-	<br><br>	
+	<br><br><br>	
 	
 	
 	<div class="content-title">
@@ -247,24 +461,28 @@
 	<br><br>The design of this seven-acre site provides opportunities for cultural exchange and understanding, for education and recreation.
 	<br><br>Visit us on-site to help us build our Food Forest or 
 	<span class="heavy">
-	<a  onclick="popup('popUpDiv')">Join Our Mailing List</a></span> to get involved.
+	<a  href="#" onclick="mailListbox_open()">Join Our Mailing List</a></span> to get involved.
 	</p>
 	
 	<table class="link-table">
-	<span class="blue">
+
 	<tr>
 		<td>
-			<a href="*">
+		<span class="blue">
+			<a  href="#" onclick="directbox_open()">
 			Get Directions
 			</a>
+			</span>
 		</td>
 		<td>
-			<a href="*">
+		<span class="blue">
+			<a href="https://www.facebook.com/beaconfoodforest" target="_blank">
 			Follow us on Facebook
 			</a>
+		</span>
 		</td>
 	</tr>
-	<tr>
+	<!-- <tr>
 		<td>
 			<a href="*">
 			Visit Our Blog
@@ -273,21 +491,21 @@
 		<td>
 			
 		</td>
-	</tr>
+	</tr> -->
 	</div>
 	</table>
 	
-	<br><br>	
+	<br><br><br>	
 
 
 	<div class="content-title">
-	<a name="contactus">Contact Us</a>
+	<div id="contactus">Contact Us</div>
 	</div><!-- contentTitle -->	
 			
 	<table class="link-table";> 
 	
 	<tr>
-		<td class="auto-style1">
+		<td >
 			<p>	Volunteer Coordinator
 			<br>Judi Johnson 
 				<span class="link">
@@ -306,14 +524,14 @@
 		</td>
 	</tr>
 	<tr>
-		<td class="auto-style1">
+		<td >
 			<p>	Administration
 			<br>Melanie Coerver 
 			
 				<span class="link">
 			<br><a>
 					m.coerver@beaconfoodforest.org
-					</a></span></p><br
+					</a></span></p><br>
 					
 		</td>
 		<td>
@@ -329,7 +547,7 @@
 	</tr>
 
 	<tr>
-		<td class="auto-style1">
+		<td >
 			<p>	Outreach
 			<br>Cheryl Wilder
 			<span class="link">
@@ -343,7 +561,7 @@
 			<br>Julie Haack
 			<span class="link">
 			<br><a>
-					jj.haack@beaconfoodforest.org
+					j.haack@beaconfoodforest.org
 					</a></span></p>
 
 		</td>
@@ -355,9 +573,10 @@
 	</div><!-- Content -->	
 	
 	<div id="imageBar">
-		<img src="img/bff_educa.png">
-		<img src="img/bff_invol.png">
-		<img src="img/bff_harv.png">
+		<img src="img/bff_map.png">
+				<br>		<br>		<br>
+		<img src="img/bff_banner.png">
+		<img src="img/bff_fruits.png">
 	</div> <!-- imageBar -->	
 
 	<div id="sidenav">
@@ -486,11 +705,10 @@
 				<a href="vimeo.com/43583846">Vimeo: Beacon Food Forest</a>
 			</p>
 			</span>
-			
-			
-			<br/><br/><br><br>
-			<br/><br/><br/><br/>
-			
+			<br/><br/><br/><br/><br/><br/>
+							<br/><br/><br/><br/><br/><br/>			<br/>
+		
+			<br><br>
 
 			
 			<span class="sponsor">
@@ -498,11 +716,11 @@
 			<br />
 				Sponsored by
 			<br /><br />	
-			<img src="img/sdon.jpg">		
+			<a href="http://www.seattle.gov/neighborhoods/" target="_blank"><img src="img/sdon.jpg"></a>
 			</span>
 			
 			
-			<br/><br/><br/><br/><br><br>
+			<br/><br/>
 						
 		</div><!-- DIV SIDE -->		
 	</div><!-- DIV SIDENAV -->
@@ -514,18 +732,18 @@
 	
 					<a href="#getinvolved">Get Involved </a>
 
-					<a>Donate</a>
+					<a  href="#" onclick="donatebox_open()">Donate</a>
 
-					<a>Learn More About The Project</a>
+					<a href="aboutproject.html">Learn More About The Project</a>
 
-					<a  onclick="popup('popUpDiv')">Join Our Mailing List</a>
+					<a  href="#" onclick="mailListbox_open()">Join Our Mailing List</a>
 
-					<a>Get Directions</a>
+					<a  href="#" onclick="directbox_open()">Get Directions</a>
 
 	</div>
 	
-			<p>©2013 Beacon Food Forest. All rights reserved. Design by 
-						<span class="link"><a href="">White Window Studios</a></span>.</p><br>
+			<p>© 2013 Beacon Food Forest. All rights reserved. Design by 
+						<span class="link"><a href="http://www.whitewindowstudios.com/" target="_blank">White Window Studios</a></span>.</p><br>
 						
 			
 		</div> <!-- DIV FOOT -->		
