@@ -473,6 +473,7 @@ body{
 		
 #main{
 	background-image:url('img/bg.png');
+	background-repeat:no-repeat;
 	width: 1000px;
 	height: auto;
 	position: absolute;
@@ -583,12 +584,15 @@ body{
 				}
 				
 				/* Image spacing */
-					#imageBar img{
+
+					.regular{
 					margin:450px 10px 0px 0 ;
 					}
-					.negspace {
-					margin: 0 0 -40px;
+					.negspace{
+					margin:410px 10px 0 0;
+					position: relative;
 					}
+
 				
 			/* Events, workparties, etc */
 			#sidenav{
@@ -619,7 +623,7 @@ body{
 
 					}
 					.sponsor img {
-					margin: 0 0px 0 -5px;}
+					p: 0 0px 0 -5px;}
 			/* Bottom Navigation Bar */
 			#botnav {
 				clear:both;
