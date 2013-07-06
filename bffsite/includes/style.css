@@ -45,6 +45,10 @@ p{
 	font-size: 12px;
 	font-family: "helvetica";
 	}
+.text-green{
+	color: #50B748;
+
+}
 
 	
 /* 
@@ -64,6 +68,8 @@ p{
 			text-decoration: none;
 			text-transform:uppercase;
 			padding: 0px 30px 0 0;
+			vertical-align: middle;
+			
 
 			}
 
@@ -72,6 +78,7 @@ p{
 		#botnav a:visited,
 		#botnav a:hover,
 		#botnav a:active {
+			vertical-align: middle;
 			color: #fff;
 			font-size: 12px;
 			/* font-family: "Segoe"; */
@@ -462,11 +469,12 @@ body{
 		background-color: #0DAED3;
 		float: right;
 		text-align: right;
+
 		margin: 12px 0 0 0;
 
 		}
 		.nav a {
-	
+
 		z-index: 10;
 		position:relative;
 		}
@@ -545,10 +553,24 @@ body{
 			float:left;
 			z-index: 3;
 			}
+		
+		#content-ext{
 			
+			width: 686px;
+			height: auto;
+			margin: 30px 0px 0 33px;
+			padding: 0 50px 0 0;
+			float:left;
+			z-index: 3;
+			}	
+			
+		.shorttext {
+		width:460px;
+		}
+		
 		#content-perma{
 					clear: both;
-			width: 687px;
+			width: 686px;
 			height: auto;
 			margin: 30px 0px 0 33px;
 			padding: 0 50px 0 0;
@@ -571,6 +593,28 @@ body{
 				border-collapse:separate;
 				border-spacing: 20px 0px;
 				margin: 0px 0 0 -20px;
+				}
+			.perma-table{
+			width: 700px;
+			height: auto;
+						
+				border-color: #A5978D;
+				border-spacing: 0;
+				margin: 0px 0 0 5px;
+
+
+				}
+				
+			.perma-table td, .perma-table th{
+			width: 50%;
+			height: auto;
+			color:#4C301C;
+			font-size: 12px;
+			font-family: "helvetica";
+				padding: 10px 10px;
+				margin: 0 0 -1px -1px;
+			vertical-align: top;
+			
 				}
 
 			/* Images here */

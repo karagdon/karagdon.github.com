@@ -9,7 +9,7 @@ Headers
 Green 
 #7AC143
 
-Blue 
+Blue +
 #0DAED3
 
  */
@@ -30,6 +30,10 @@ p{
 	color:#4C301C;
 	font-size: 12px;
 	font-family: "helvetica";
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
 
 }
 
@@ -37,6 +41,7 @@ p{
 	font-size: 25px;
 	color:#A5978D;
 	font-family: "Georgia";
+	padding: 0px 0 20px 0;
 	}
 
 .text-bold{
@@ -489,7 +494,16 @@ body{
 	padding: 15px 0px 0 0;
 	z-index: 1;
 	}
-
+#main_alt{
+	background-image:url('img/bg_alt.png');
+	background-repeat:no-repeat;
+	width: 1000px;
+	height: auto;
+	position: absolute;
+	margin: -8px -8px;
+	padding: 15px 0px 0 0;
+	z-index: 1;
+	}
 .top-text{
 	color:#4C301C;
 			/* font-family: "Segoe"; */
@@ -549,19 +563,23 @@ body{
 		
 			width: 460px;
 			height: auto;
-			margin: 30px 0px 0 33px;
+			margin: 0px 0px -30px 33px;
+			padding: 0 0 30px 0;
 			float:left;
 			z-index: 3;
+			padding-right: 276px;
+
 			}
 		
 		#content-ext{
 			
-			width: 686px;
+			width: 460px;
 			height: auto;
 			margin: 30px 0px 0 33px;
-			padding: 0 50px 0 0;
+			padding: 0 276px 0 0;
 			float:left;
 			z-index: 3;
+			border-right: 10px #50B748 solid; 
 			}	
 			
 		.shorttext {
@@ -572,10 +590,12 @@ body{
 					clear: both;
 			width: 686px;
 			height: auto;
-			margin: 30px 0px 0 33px;
-			padding: 0 50px 0 0;
+			margin: 18px 0px 00px 33px;
+			padding: 0px 50px 30px 0;
 			float:left;
 			z-index: 3;
+						z-index: 3;
+			border-right: 10px #50B748 solid; 
 			}
 			
 			#content2-perma{
@@ -583,7 +603,7 @@ body{
 				width: 460px;
 				height: auto;
 				padding: 0 227px 0  0;
-				margin: 0 0px 0 0px;
+			margin: 0px 0px 0 33px;
 				float:left;
 				z-index: 3;
 				}
@@ -620,7 +640,7 @@ body{
 			/* Images here */
 			#imageBar{
 				width: 212px;
-				margin: -180px 00px 0 64px;
+				margin: -450px 00px 0 -222px;
 				position: relative;
 				float:left;
 				padding: 0 0 -30px 45px;
@@ -630,7 +650,7 @@ body{
 				/* Image spacing */
 
 					.regular{
-					margin:450px 10px 0px 0 ;
+					margin:480px 10px 0px 0 ;
 					}
 					.negspace{
 					margin:410px 10px 0 0;
@@ -641,19 +661,21 @@ body{
 			/* Events, workparties, etc */
 			#sidenav{
 				float:left;
-				margin: 270px 0 -19px 0px;
-				padding: 0 25px 10px 25px;
-				bottom: 0;
+				margin: 30px 0 -19px 0px;
+				padding: 0px 25px 10px 25px;
+				bottom: 0px;
 				width:150px;
 				height: auto;
-				border-left: 10px #50B748 solid; 
+				/* border-left: 10px #50B748 solid;  */
 				}
 
 				.sidetitle{
 					font-size: 19px;
+
 					color:#7AC143;
 					font-family: "Georgia";
-					 line-height:90%;
+					 line-height:100%;
+					vertical-align: top;
 					}
 				
 				/* This only appears once */
@@ -661,13 +683,15 @@ body{
 					font-size: 19px;
 					color:#4C301C;
 					font-family: "Georgia";
-					line-height:110%;
-					position: relative;
-					padding: 15px 0;
+					line-height:1.4em;
+					position: absolute;
+					bottom:0;
+					margin: -100px 0 0 0;
+	
 
 					}
 					.sponsor img {
-					p: 0 0px 0 -5px;}
+					margin: 10px 0px 0px 0px;}
 			/* Bottom Navigation Bar */
 			#botnav {
 				clear:both;
@@ -693,6 +717,10 @@ body{
 	background-color: #fff;
 	margin: 0 0px 0 -1px;
 	z-index:10;
+	
+	}
+	#footer p{
+	margin: 15px 0 0 0;
 	}
 
 /* 
