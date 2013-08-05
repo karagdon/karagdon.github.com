@@ -58,7 +58,8 @@ height: 200px;}
 body{ background-color: #222;
 width: 80%;
 height: auto;
-content-align: center;
+    margin: 0px auto;
+    text-align: center;
 }
 
 a:link {color:#2db3b3;} 
@@ -150,7 +151,7 @@ margin: 0 0 0 30px;
 -webkit-transition: width 0.7s ease-out;
 transition: width 0.7s ease-out;
 }
-.flex > article:hover { width: 40%;  }
+.flex > article:hover { width: 400px;  }
 
 article:hover  h1{display: block;
 }
