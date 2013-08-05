@@ -1,0 +1,180 @@
+@font-face {
+font-family: Cantarell;
+src: url(Cantarell.ttf);
+}
+
+p {
+font-size: 1em;
+color: #fff;
+font-family: Cantarell;
+margin: 0 0 0 30px;}
+
+h1 {
+display: block;
+font-size: 1em;
+text-align: center;
+color: #fff;
+font-family: Cantarell;
+background-color:#333;
+width: 100%;
+}	
+h2 {
+display: none;
+font-size: 1.2em;
+text-align: center;
+color: #222;
+font-family: Cantarell;
+
+width: 100%;
+
+}	
+h3 {
+display: none;
+font-size: .9em;
+text-align: center;
+color: #222;
+font-family: Cantarell;
+
+width: 100%;
+
+}	
+
+
+.title{ 	
+font-size: 1em;
+background-color: #333;
+color: #eee;
+text-transform: uppercase;
+font-family: Cantarell;
+padding: 0 0 3px 20px;
+margin: 0 0 10px 10px;
+position: relative;
+width: 200px;
+
+	}
+article {  width: 200px;
+height: 200px;}	
+	
+body{ background-color: #222;
+width: 80%;
+height: auto;
+content-align: center;
+}
+
+a:link {color:#2db3b3;} 
+a:visited {color:#2db3b3;} 
+a:hover {color:#d43535;} 
+a:active {color:#2db3b3;}
+
+header  {
+position: relative; 
+
+background-image: url('img/teemop1-logo-w340.png');
+background-repeat: no-repeat;
+background-position: 50% 50%;
+height: 230px;
+width: 100%;
+padding: 0 0;
+margin: 0 0 20px 0;
+}
+footer {
+margin: 45px 15px 0 15px;
+font-size: .9em;
+color: #555;
+
+font-family: Cantarell;
+}
+.Content {
+position: relative;
+word-wrap:break-word;
+width: 100%;
+display: block;
+height: auto;
+margin: 0 0 15px 0;
+}
+
+.flex {
+
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+
+margin: 0 0 0 30px;
+
+
+ 
+}
+
+.flex > article {
+  display: -ms-flexbox;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  -ms-box-align: center;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: inline-flex;
+  
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  
+  -webkit-align-content: flex-start;
+  -moz-align-content: flex-start;
+  -ms-align-content: flex-start;
+  align-content: flex-start;
+  
+
+-webkit-transition: width 0.7s ease-out;
+transition: width 0.7s ease-out;
+}
+.flex > article:hover { width: 40%;  }
+
+article:hover  h1{display: block;
+}
+article:hover  h2{display: block;
+}
+article:hover  h3{display: block;
+}
+.flex > article:nth-child(1) {
+background : hsl(180, 75%,60%); 
+border-bottom : hsl(180, 75%,50%) 5px solid;
+}
+.flex > article:nth-child(2) {
+background : hsl(180, 75%,30%); 
+border-bottom : hsl(180, 75%,20%) 5px solid;
+}
+.flex > article:nth-child(3) {
+background : hsl(180, 75%,40%); 
+border-bottom : hsl(180, 75%,30%) 5px solid;}
+
+.flex > article:nth-child(4) {
+background : hsl(180, 75%,70%); 
+border-bottom : hsl(180, 75%,60%) 5px solid;}
+.flex > article:nth-child(5) {
+background : hsl(180, 75%,50%); 
+border-bottom : hsl(180, 75%,40%) 5px solid;}
+
+
