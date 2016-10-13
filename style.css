@@ -17,6 +17,7 @@ Blue
 /*
 	Global text styles 
 								*/
+.view a { font-weight: bold; }
 p{
 
 color:#4C301C;
