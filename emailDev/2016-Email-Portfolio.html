@@ -67,6 +67,9 @@ text-align: center;
 	        <div id="owl-demo" class="owl-carousel">
 
 	        </div>
+	        <div id="owl-demo-explain" class="owl-carousel">
+
+	        </div>
 	      </div>
 	    </div>
 	  </div>
@@ -94,13 +97,34 @@ text-align: center;
 
 
     <script>
-    $(document).ready(function() {
+	$(document).ready(function() {
+	 
+	  $("#owl-demo").owlCarousel({
+	    jsonPath : 'json/customData.json',
+	    jsonSuccess : customDataSuccess
+	  });
+	 
+	  function customDataSuccess(data){
+	    var content = "";
+	    var content2 = "";
 
-      $("#owl-demo").owlCarousel({
-        jsonPath : "json/data.json"
-      });
+	    content2 += "<ul>";
+	    for(var i in data["items"]){
+	       
+	       var img = data["items"][i].img;
+	       var li = data["li"][i].li;
+	 
+	       content += "<img src=\"" +img+ "\" >";
+	       content2 += "<li>"+li+"</li>";
+	       
+	    }
+	    content2 += "</ul>";
 
-    });
+	    $("#owl-demo").html(content);
+	    $("#owl-demo-explain").html(content2);
+	  }
+	 
+	});
     </script>
 
 

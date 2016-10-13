@@ -2,23 +2,23 @@
 	"items" : [
 		{
 			"img": "assets/CatalogAnimated.gif",
-			"alt" : "Animated single hero, live text, call-to-action, responsive"
+			"li" : "Animated single hero, live text, call-to-action, responsive"
 		},
 		{
 			"img": "assets/Preference-Center---data-and-custom-js.jpg",
-			"alt" : "Inbox-to-settings landing page, pre-populated data based on email account, data validation, custom checkbox styling and functionality"
+			"li" : "Inbox-to-settings landing page, pre-populated data based on email account, data validation, custom checkbox styling and functionality"
 		},
 		{
 			"img": "assets/Responsive-sm-adjust.jpg",
-			"alt" : "Minimal design, live text, adjusts and scales to responsive sizes, semi-fluid design"
+			"li" : "Minimal design, live text, adjusts and scales to responsive sizes, semi-fluid design"
 		},
 		{
 			"img": "assets/Static-non-responsive-scaled.jpg",
-			"alt" : "High quality images, different clickthroughs, static page"
+			"li" : "High quality images, different clickthroughs, static page"
 		},
 		{
 			"img": "assets/Transactional-Dynamic-Data.jpg",
-			"alt" : "Dynamic data, calculations text over background images, custom messages, responsive and fluid hybrid"
+			"li" : "Dynamic data, calculations text over background images, custom messages, responsive and fluid hybrid"
 		}
 	]
 }
