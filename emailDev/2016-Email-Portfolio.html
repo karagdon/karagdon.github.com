@@ -127,14 +127,14 @@ text-align: center;
 	       var img = data["items"][i].img;
 	       var li = data["items"][i].li;
 	 
-	       content += "<img src=\"" +img+ "\" >";
+	       content += "<div class='items'><img src=\"" +img+ "\" ></div>";
 	       content2 += "<li>"+li+"</li>";
 	       
 	    }
 	    content2 += "</ul>";
-
-	    $("#owl-demo").html(content);
 	    $("#owl-demo-explain").html(content2);
+	    $("#owl-demo").html(content);
+	    
 	  }
 	 
 	});
