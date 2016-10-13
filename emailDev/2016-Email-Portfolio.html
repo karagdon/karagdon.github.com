@@ -64,13 +64,8 @@ text-align: center;
 	    <div class="row">
 	      <div class="span12">
 	  		
-	  		<div id="owl-demo" class="explain owl-carousel">
+	  		<div id="owl-demo-explain" class=" owl-carousel">
 	  		</div>
-	
-	  		<div class="customNavigation">
-				  <a class="btn prev">&lt;Previous</a>
-				  <a class="btn next">Next&gt;</a>
-			</div>
 	
 	        <div id="owl-demo" class="owl-carousel">	
 	        </div>
@@ -121,15 +116,7 @@ text-align: center;
 	      // itemsTablet: false,
 	      // itemsMobile : false
 	  });
-	 
-		// Custom Navigation Events
-		$(".next").click(function(){
-			owl.trigger('owl.next');
-		})
-		$(".prev").click(function(){
-			owl.trigger('owl.prev');
-		})
-
+	
 	  function customDataSuccess(data){
 	    var content = "";
 	    var content2 = "";
@@ -140,12 +127,12 @@ text-align: center;
 	       var img = data["items"][i].img;
 	       var li = data["items"][i].li;
 	 
-	       content += "<div class='items'><img src=\"" +img+ "\" style='width:500px; height:auto;'></div>";
+	       content += "<div class='items'><a href=\"" +aimg+ "\" target='_blank'><img src=\"" +img+ "\" style='width:500px; height:auto;'></a></div>";
 	       content2 += "<li>"+li+"</li>";
 	       
 	    }
 	    content2 += "</ul>";
-	    $("#owl-demo.explain").html(content2);
+	    $("#owl-demo-explain").html(content2);
 	    $("#owl-demo").html(content);
 	    
 	  }
