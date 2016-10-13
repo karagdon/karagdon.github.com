@@ -34,7 +34,7 @@ function Reset() {
 	min = initMin;
 	sec = initSec;
 	formatTime();
-	document.getElementById("statusLabel").innerHTML = "";
+	document.getElementById("statusLabel").innerHTML = "&#160;";
 	document.getElementById("timeLabel").innerHTML =_time;
 }
 

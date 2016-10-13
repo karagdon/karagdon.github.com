@@ -2,24 +2,36 @@
 <head>
 <title> BOCK: A Board Game Clock
 </title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.timeClock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+     width: 500px; height: auto; margin: 0 auto; text-align:center;
+}
+.lbl {
+	font-size:60pt;font-weight:bold; color: #000;
+}
+.btn {
+	padding: 0 0 20px 0 ;
+	width: 300px;
+	line-height: 50px;
+	height: 50px;
+ 	font-size:60pt;	
+}
+</style>
 </head>
 <body>
-<div ID="timeClockA">
-   
-   
-	<div ID="timeLabel" style="font-size:24pt;font-weight:bold;">05:00</div>
-        <input type="button" onclick="ActivateTimer();" value="START" />
-		<input type="button" onclick="Stop();" value="STAHP" />
-		<input type="button" onclick="Reset();" value="RESET" />
-			<div ID="statusLabel" style="font-size:24pt;font-weight:bold;font-color:#ff0000"></div>
+<div class="timeClock" >   
+	<div ID="statusLabel" .class="lbl" >&#160;</div>	
+	<div ID="timeLabel" .class="lbl" type="text" >05:00</div>
+    <div><input class="btn" type="button" onclick="ActivateTimer();" value="START" /></div>
+	<div><input class="btn" type="button" onclick="Stop();" value="STAHP" /></div>
+	<div><input class="btn" type="button" onclick="Reset();" value="RESET" /></div>
 	
-
-			
-        <script type="text/javascript" src="timer.js">          
-			</script>
-			
-			
 </div>
+<script type="text/javascript" src="timer.js"></script>
 </body>
 </html>
