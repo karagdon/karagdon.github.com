@@ -1,5 +1,6 @@
 
 /* Owl Carousel Bootstrap Custom CSS */
+.owl-carousel {background-color: #fefff1;}
 
 #owl-demo .item{
   background: #3fbf79;
