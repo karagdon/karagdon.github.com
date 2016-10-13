@@ -46,14 +46,14 @@ background-color: #333;
 color: #eee;
 text-transform: uppercase;
 font-family: Cantarell;
-padding: 0 0 3px 20px;
-margin: 0 0 10px 10px;
 position: relative;
-width: 200px;
+width: 100%;
+margin: 10px auto;
 
 	}
 article {  width: 200px;
-height: 200px;}	
+height: 200px;
+margin: 0 auto;}	
 	
 body{ background-color: #222;
 width: 80%;
@@ -109,10 +109,6 @@ margin: 0 0 15px 0;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 
-
-margin: 0 0 0 30px;
-
-
  
 }
 
@@ -150,6 +146,7 @@ margin: 0 0 0 30px;
 
 -webkit-transition: width 0.7s ease-out;
 transition: width 0.7s ease-out;
+
 }
 .flex > article:hover { width: 400px;  }
 
