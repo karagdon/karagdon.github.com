@@ -51,8 +51,9 @@ text-align: center;
 	  <div class="container">
 	    <div class="row">
 	      <div class="span12">
-	        <h1>Email Development Portfolio</h1>
-	        <h2>Katherine Reyes</h2>
+	        <h1>Katherine Reyes</h1>
+	        <h2>Email Development Portfolio 2016</h2>
+	        
 	      </div>
 	      
 	    </div>
@@ -63,9 +64,6 @@ text-align: center;
 	  <div class="container">
 	    <div class="row">
 	      <div class="span12">
-	  		
-	  		<div id="owl-demo-explain" class=" owl-carousel">
-	  		</div>
 	
 	        <div id="owl-demo" class="owl-carousel">	
 	        </div>
@@ -100,7 +98,7 @@ text-align: center;
 	$(document).ready(function() {
 	 
 
-	  $("#owl-demo, #owl-demo-explain").owlCarousel({
+	  $("#owl-demo").owlCarousel({
 	    jsonPath : 'json/customData.json',
 	    jsonSuccess : customDataSuccess,
 
@@ -119,21 +117,16 @@ text-align: center;
 	
 	  function customDataSuccess(data){
 	    var content = "";
-	    var content2 = "";
-
-	    content2 += "<ul>";
+	    
 	    for(var i in data["items"]){
 	       
 	       var img = data["items"][i].img;
 	       var aimg = data["items"][i].aimg;
 	       var li = data["items"][i].li;
 	 
-	       content += "<div class='items'><a href=\"" +img+ "\" target='_blank'><img src=\"" +aimg+ "\" ></a></div>";
-	       content2 += "<li>"+li+"</li>";
-	       
+	       content += "<div style='height:50px'>"+li+"</div>";	       
+	       content += "<div class='items'><a href=\"" +img+ "\" target='_blank'><img src=\"" +aimg+ "\" /></a></div>";
 	    }
-	    content2 += "</ul>";
-	    $("#owl-demo-explain").html(content2);
 	    $("#owl-demo").html(content);
 	    
 	  }
