@@ -1,0 +1,9 @@
+{
+	"owl" : [
+	    {"item" : "<span class='item'><img src='assets/CatalogAnimated.gif'/></span>"},
+	    {"item" : "<span class='item'><img src='assets/Preference-Center---data-and-custom-js.jpg'/></span>"},
+	    {"item" : "<span class='item'><img src='assets/Responsive-sm-adjust.jpg'/></span>"},
+	    {"item" : "<span class='item'><img src='assets/Static-non-responsive-scaled.jpg'/></span>"},
+	    {"item" : "<span class='item'><img src='assets/Transactional-Dynamic-Data.jpg'/></span>"}
+	]
+}

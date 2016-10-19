@@ -1,0 +1,29 @@
+{
+	"items" : [
+		{
+			"aimg": "assets/thumb/CatalogAnimated.gif",
+			"img": "assets/CatalogAnimated.gif",
+			"li" : "Animated single hero, live text, call-to-action, responsive"
+		},
+		{
+			"aimg": "assets/thumb/Preference-Center---data-and-custom-js.jpg",
+			"img": "assets/Preference-Center---data-and-custom-js.jpg",
+			"li" : "Inbox-to-settings landing page, pre-populated data based on email account, data validation, custom checkbox styling and functionality"
+		},
+		{
+			"aimg": "assets/thumb/Responsive-sm-adjust.jpg",
+			"img": "assets/Responsive-sm-adjust.jpg",
+			"li" : "Minimal design, live text, adjusts and scales to responsive sizes, semi-fluid design"
+		},
+		{
+			"aimg": "assets/thumb/Static-non-responsive-scaled.jpg",
+			"img": "assets/Static-non-responsive-scaled.jpg",
+			"li" : "High quality images, different clickthroughs, static page"
+		},
+		{
+			"aimg": "assets/thumb/Transactional-Dynamic-Data.jpg",
+			"img": "assets/Transactional-Dynamic-Data.jpg",
+			"li" : "Dynamic data, calculations text over background images, custom messages, responsive and fluid hybrid"
+		}
+	]
+}
